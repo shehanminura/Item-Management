@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.addItemController">
+   <children>
+      <AnchorPane layoutX="2.0" prefHeight="436.0" prefWidth="712.0">
+         <children>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#6d0078" height="436.0" layoutX="273.0" layoutY="-1.0" opacity="0.13" stroke="BLACK" strokeWidth="0.0" width="437.0" />
+            <Label fx:id="lblHello" alignment="CENTER" contentDisplay="CENTER" layoutX="307.0" prefHeight="80.0" prefWidth="344.0" text="MY Shop" textAlignment="CENTER" textFill="#7a044d" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="31.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnViewTable" layoutX="291.0" layoutY="353.0" mnemonicParsing="false" onAction="#btnViewTableOnAction" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #5c3e60;" text="View Table" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <ImageView fitHeight="436.0" fitWidth="275.0" layoutX="-4.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Img/item_image.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#1c00a130" height="319.0" layoutX="27.0" layoutY="61.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="207.0" />
+            <ImageView fitHeight="246.0" fitWidth="174.0" layoutX="64.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Img/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="30.0" layoutY="157.0" prefHeight="189.0" prefWidth="207.0" text="Welcome to the Item Shop where you view and purchase current items. For a full breakdown of in-game currency, view your Fortnite V-Bucks Balances." textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="379.0" prefHeight="17.0" prefWidth="174.0" text="shehanminuradp@gmail.com" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="84.0" layoutY="401.0" prefHeight="17.0" prefWidth="174.0" text="+94 76 423 0420" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblHello1" alignment="CENTER" contentDisplay="CENTER" layoutX="336.0" layoutY="80.0" prefHeight="48.0" prefWidth="310.0" text="Add Item Form" textAlignment="CENTER" textFill="#7a0450" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="31.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtId" layoutX="342.0" layoutY="153.0" promptText="id" />
+            <TextField fx:id="txtName" layoutX="549.0" layoutY="153.0" promptText="Name" />
+            <TextField fx:id="txtQuatity" layoutX="350.0" layoutY="205.0" promptText="Quatity" />
+            <TextField fx:id="txtPrice" layoutX="549.0" layoutY="205.0" promptText="price" />
+            <Button fx:id="btnAddItem" layoutX="575.0" layoutY="353.0" mnemonicParsing="false" onAction="#btnAddItemOnAction" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #5c3e60;" text="Add Item" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Label layoutX="511.0" layoutY="157.0" text="Name">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="514.0" layoutY="208.0" text="Price">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="298.0" layoutY="157.0" text="ID">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="291.0" layoutY="209.0" text="Quantity">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtDescription" layoutX="432.0" layoutY="267.0" prefHeight="61.0" prefWidth="269.0" promptText="Description" />
+            <Label layoutX="306.0" layoutY="284.0" text=" Item Description">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnDelete" layoutX="433.0" layoutY="353.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #5c3e60;" text="Delete " textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

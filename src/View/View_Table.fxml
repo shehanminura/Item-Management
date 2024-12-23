@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.viewController.0">
+   <children>
+      <Label alignment="CENTER" layoutX="186.0" layoutY="14.0" prefHeight="81.0" prefWidth="227.0" text="Label" textFill="#7d0c5a">
+         <font>
+            <Font name="Comic Sans MS Bold" size="41.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblitem" layoutX="27.0" layoutY="101.0" prefHeight="224.0" prefWidth="549.0">
+         <columns>
+            <TableColumn fx:id="colid" prefWidth="81.33331298828125" text="ID" />
+            <TableColumn fx:id="colName" prefWidth="93.33334350585938" text="Name" />
+            <TableColumn fx:id="colQuantity" prefWidth="112.0" text="Quantity" />
+            <TableColumn fx:id="colPrice" prefWidth="98.6666259765625" text="Price" />
+            <TableColumn fx:id="colDescription" prefWidth="164.66668701171875" text=" Item Description" />
+         </columns>
+      </TableView>
+      <Button layoutX="251.0" layoutY="336.0" mnemonicParsing="false" onAction="#btnRelodOnAction" prefHeight="50.0" prefWidth="117.0" style="-fx-background-color: #83099F;" text="Relod" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
